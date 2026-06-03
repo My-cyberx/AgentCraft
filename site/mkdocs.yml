@@ -1,13 +1,13 @@
 site_name: AgentCraft
 site_description: A curated library of scripts, skills, and flows for O&G and API auditing — built from 9 years of fieldwork.
 site_author: Aiham Alhawar
-repo_url: https://github.com/ah-alhawar/agentcraft
-repo_name: ah-alhawar/agentcraft
+repo_url: https://github.com/My-cyberx/AgentCraft
+repo_name: My-cyberx/AgentCraft
 edit_uri: edit/main/site/docs/
 docs_dir: docs
 site_dir: site
 use_directory_urls: true
-strict: false
+strict: true
 theme:
   name: material
   palette:
@@ -62,16 +62,29 @@ markdown_extensions:
 nav:
   - Home: index.md
   - How it works: how-it-works.md
-  - Library: library/index.md
+  - Library:
+    - Overview: library/index.md
+    - Drilling: library/drilling/index.md
+    - HSE: library/hse/index.md
+    - Operations:
+      - Overview: library/operations/index.md
+      - SME Audit: library/operations/sme-audit/flow-audit-deliverable.md
+      - LSS:
+        - Overview: library/operations/lss/index.md
+        - DMAIC: library/operations/lss/dmaic-template.md
+        - Fishbone: library/operations/lss/fishbone.md
+        - Pareto: library/operations/lss/pareto.md
+    - Quality: library/quality/index.md
   - Examples: examples/index.md
   - Install: install.md
   - Integrations: integrations.md
+  - Deployment: deployment.md
   - FAQ: faq.md
   - Compare: compare.md
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/ah-alhawar/agentcraft
+      link: https://github.com/My-cyberx/AgentCraft
       name: AgentCraft on GitHub
   generator: false
 plugins:
