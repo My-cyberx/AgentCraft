@@ -1,0 +1,2 @@
+Drop the real `00-api-q1-audit-checklist-v1.4.0-2026-05-20.xlsx` here.
+Until then, this artifact's checklist is hard-coded in `audit_checklist.py`.

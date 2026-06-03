@@ -1,0 +1,78 @@
+site_name: AgentCraft
+site_description: A curated library of scripts, skills, and flows for O&G and API auditing — built from 9 years of fieldwork.
+site_author: Aiham Alhawar
+repo_url: https://github.com/ah-alhawar/agentcraft
+repo_name: ah-alhawar/agentcraft
+edit_uri: edit/main/site/docs/
+docs_dir: docs
+site_dir: site
+use_directory_urls: true
+strict: false
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+nav:
+  - Home: index.md
+  - How it works: how-it-works.md
+  - Library: library/index.md
+  - Examples: examples/index.md
+  - Install: install.md
+  - Integrations: integrations.md
+  - FAQ: faq.md
+  - Compare: compare.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ah-alhawar/agentcraft
+      name: AgentCraft on GitHub
+  generator: false
+plugins:
+  - search

@@ -1,0 +1,30 @@
+# API Q1 11th ed. Audit Checklist — Example
+# This is what the auditor fills in *before* going on-site.
+
+name: "Al Mansoori Drilling Services LLC"
+
+# List the evidence the org has confirmed is present at the start of the audit.
+# Anything not listed here will appear as a GAP in the output.
+evidence_present:
+  - "QMS scope documented"
+  - "Process map"
+  - "QMS policy"
+  - "RACI matrix"
+  - "Document control procedure"
+  - "Master document list"
+  - "Training records"
+  - "Risk register"
+  - "Internal audit programme"
+  - "Audit reports"
+  - "Management review minutes"
+  - "NCR procedure"
+  - "NCR log"
+  - "CAR procedure"
+  - "CAR log"
+  - "Customer requirements review"
+  - "Supplier evaluation records"
+  - "Production procedures"
+  - "Work instructions"
+  - "Release authorization records"
+  - "Change control procedure"
+  - "Improvement projects"

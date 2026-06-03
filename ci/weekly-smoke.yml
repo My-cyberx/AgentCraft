@@ -1,0 +1,82 @@
+name: Weekly Smoke Test
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch:  # Manual trigger
+  push:
+    paths:
+      - "canon/**"
+      - "skills/**"
+      - "scripts/**"
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate filenames (§2.2)
+        run: |
+          python3 scripts/validate_naming.py
+
+      - name: Run DEPRO calc smoke test
+        run: |
+          cd canon/drilling/upstream/depro-calc
+          python3 depro_calc.py --input inputs.example.yaml > /tmp/depro.out
+          grep -q "DEPRO:" /tmp/depro.out || (echo "FAIL: no DEPRO line" && exit 1)
+          grep -q "bopd" /tmp/depro.out || (echo "FAIL: no units" && exit 1)
+          echo "✓ DEPRO smoke test passed"
+
+      - name: Run API Q1 audit checklist smoke test
+        run: |
+          cd canon/quality/api-q1/audit-checklist
+          python3 audit_checklist.py --input inputs.example.yaml > /tmp/audit.out
+          grep -q "API Q1" /tmp/audit.out || (echo "FAIL: no API Q1 header" && exit 1)
+          grep -qE "Clauses: +[0-9]+" /tmp/audit.out || (echo "FAIL: no clause count" && exit 1)
+          echo "✓ Audit checklist smoke test passed"
+
+      - name: Build MkDocs site (strict mode)
+        run: |
+          pip install mkdocs mkdocs-material
+          cd site
+          mkdocs build --strict
+          echo "✓ MkDocs build passed"
+
+      - name: Detect stale artifacts (no commit in 90+ days)
+        run: |
+          STALE=$(find canon/ -name "CHANGELOG.md" -mtime +90 | wc -l)
+          if [ "$STALE" -gt 0 ]; then
+            echo "WARN: $STALE CHANGELOG(s) not updated in 90+ days"
+            echo "::warning::$STALE artifacts may be stale"
+          else
+            echo "✓ All artifacts updated in last 90 days"
+          fi
+
+      - name: Notify on failure (Telegram)
+        if: failure()
+        run: |
+          if [ -n "$TELEGRAM_BOT_TOKEN" ] && [ -n "$TELEGRAM_HOME_CHANNEL" ]; then
+            MSG="🚨 AgentCraft smoke test FAILED on ${{ github.ref_name }}%0A%0ACommit: ${{ github.sha }}%0ARun: ${{ github.run_id }}"
+            curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+              -d "chat_id=${TELEGRAM_HOME_CHANNEL}" \
+              -d "text=${MSG}" \
+              -d "parse_mode=HTML" || true
+          fi
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_HOME_CHANNEL: ${{ secrets.TELEGRAM_HOME_CHANNEL }}
+
+      - name: Notify on success
+        if: success()
+        run: |
+          echo "✅ All smoke tests passed on ${{ github.ref_name }} @ ${{ github.sha }}"

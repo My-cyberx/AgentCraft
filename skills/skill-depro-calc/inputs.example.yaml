@@ -1,0 +1,52 @@
+# DEPRO Calculator — example input
+# Field name:   Well A-12 (Block 4, ADNOC Onshore)
+# Window:       Q1 2026 (Jan 1 - Mar 31, 2160 hours)
+# Design rate:  4,200 bopd
+
+name: "Well A-12"
+design_rate_bopd: 4200
+analysis_window_hours: 2160
+
+events:
+  # Production events
+  - start: "2026-01-01T00:00:00"
+    end:   "2026-01-15T08:00:00"
+    rate:  4150
+    reason: "stable production"
+
+  # Downtime events
+  - start: "2026-01-15T08:00:00"
+    end:   "2026-01-17T14:00:00"
+    reason: "ESP failure - pulled and replaced"
+    error_hours: 2.0
+
+  - start: "2026-02-03T22:00:00"
+    end:   "2026-02-04T06:00:00"
+    reason: "scheduled shut-in - well test"
+    error_hours: 0.5
+
+  - start: "2026-02-21T11:00:00"
+    end:   "2026-02-23T19:00:00"
+    reason: "flowline leak - hot tap repair"
+    error_hours: 3.0
+
+  - start: "2026-03-12T05:00:00"
+    end:   "2026-03-12T09:00:00"
+    reason: "power outage - grid fault"
+    error_hours: 0.25
+
+  # More production
+  - start: "2026-02-04T06:00:00"
+    end:   "2026-02-21T11:00:00"
+    rate:  4100
+    reason: "stable production"
+
+  - start: "2026-02-23T19:00:00"
+    end:   "2026-03-12T05:00:00"
+    rate:  4200
+    reason: "stable production"
+
+  - start: "2026-03-12T09:00:00"
+    end:   "2026-03-31T23:59:59"
+    rate:  4250
+    reason: "stable production"

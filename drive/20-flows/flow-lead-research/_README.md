@@ -1,0 +1,1 @@
+ICP → scored leads → Airtable.
