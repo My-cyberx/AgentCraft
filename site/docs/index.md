@@ -12,21 +12,32 @@
 - **Skills** — drop a `SKILL.md` into your Hermes / Claude / Cursor setup; the agent now knows how to do a specific procedure in your voice, with the right tools, citing the right standards.
 - **Flows** — multi-stage compositions that produce a complete deliverable in one agent run. SME audit (7 docs in 30 min), lead research (ICP → 50 scored leads in Airtable), content publish (1 topic → blog + thread + LinkedIn + newsletter), build website (brief → live URL on Vercel).
 
-## The first 3 artifacts
+## The first 9 artifacts
 
 | Artifact | Type | Domain | Cost / run | Status |
 |---|---|---|---|---|
 | [DEPRO Calculator](library/drilling/upstream/depro-calc.md) | Script | Drilling / Upstream | Free (stdlib) | ✅ v3.2.1 |
+| [Cement Job Design](library/drilling/upstream/cement-job-design.md) | Skill | Drilling / Upstream | Free (stdlib) | ✅ v1.0.0 |
+| [Liner Hanger Overview](library/drilling/upstream/liner-hanger-overview.md) | Flow | Drilling / Upstream | ~$0.16 | ✅ v1.0.0 |
 | [API Q1 Audit Checklist](library/quality/api-q1/audit-checklist.md) | Script | Quality / QMS | Free (stdlib; openpyxl optional) | ✅ v1.4.0 |
+| [IWCF L4 Drill](library/hse/iwcf-l4/drill.md) | Skill | HSE / IWCF L4 | ~$0.02 | ✅ v1.0.0 |
+| [DMAIC Template](library/operations/lss/dmaic-template.md) | Script | Operations / LSS | Free (stdlib) | ✅ v1.0.0 |
+| [Fishbone Generator](library/operations/lss/fishbone.md) | Skill | Operations / LSS | Free (stdlib) | ✅ v1.0.0 |
+| [Pareto Chart](library/operations/lss/pareto.md) | Script | Operations / LSS | Free (stdlib) | ✅ v1.0.0 |
 | [SME Audit Deliverable Flow](library/operations/sme-audit/flow-audit-deliverable.md) | Flow | Operations / SME Audit | ~$0.54 | ✅ v1.0.0 |
+
+## Live site
+
+- **Production:** https://agentcraft-8lp.pages.dev
+- **Custom domain:** wired in step 5 (see [Deployment](deployment.md))
 
 ## Install
 
 ```bash
-git clone https://github.com/ah-alhawar/agentcraft
-cd agentcraft
+git clone https://github.com/My-cyberx/AgentCraft
+cd AgentCraft
 pip install mkdocs mkdocs-material
-mkdocs serve   # → http://localhost:8000
+cd site && mkdocs serve   # → http://localhost:8000
 ```
 
 ## Why this exists

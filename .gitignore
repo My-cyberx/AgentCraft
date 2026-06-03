@@ -21,3 +21,6 @@ __pycache__/
 # Drive sync
 drive/**/*.tmp
 drive/**/.~lock.*
+
+# Cloudflare wrangler
+.wrangler/

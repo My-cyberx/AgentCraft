@@ -13,23 +13,27 @@ The AgentCraft catalog. Curated, versioned, tested weekly.
 | Slug | Type | Domain | Vertical | Version | Last tested | Cost / run |
 |---|---|---|---|---|---|---|
 | [depro-calc](drilling/upstream/depro-calc.md) | Script | Drilling | Upstream | v3.2.1 | 2026-06-03 | Free |
+| [cement-job-design](drilling/upstream/cement-job-design.md) | Skill | Drilling | Upstream | v1.0.0 | 2026-06-03 | Free |
+| [liner-hanger-overview](drilling/upstream/liner-hanger-overview.md) | Flow | Drilling | Upstream | v1.0.0 | 2026-06-03 | ~$0.16 |
 | [audit-checklist](quality/api-q1/audit-checklist.md) | Script | Quality | API Q1 | v1.4.0 | 2026-06-03 | Free (openpyxl optional) |
+| [iwcf-l4-drill](hse/iwcf-l4/drill.md) | Skill | HSE | IWCF L4 | v1.0.0 | 2026-06-03 | ~$0.02 |
+| [dmaic-template](operations/lss/dmaic-template.md) | Script | Operations | LSS | v1.0.0 | 2026-06-03 | Free |
+| [fishbone](operations/lss/fishbone.md) | Skill | Operations | LSS | v1.0.0 | 2026-06-03 | Free |
+| [pareto](operations/lss/pareto.md) | Script | Operations | LSS | v1.0.0 | 2026-06-03 | Free |
 | [flow-audit-deliverable](operations/sme-audit/flow-audit-deliverable.md) | Flow | Operations | SME Audit | v1.0.0 | 2026-06-03 | ~$0.54 |
+
+**9 artifacts** across 4 domains. All Day-1 + Day-2 complete.
 
 ## Coming soon
 
 | Slug | Type | Domain | Target |
 |---|---|---|---|
-| `cement-job-design` | Skill | Drilling | Day-2 |
-| `liner-hanger-overview` | Flow | Drilling | Day-2 |
-| `iwcf-l4-drill` | Skill | HSE | Day-2 |
-| `pareto-script` | Script | Operations | Day-2 |
-| `fishbone-skill` | Skill | Operations | Day-2 |
-| `dmaic-template` | Script | Operations | Day-2 |
+| `non-conformance-flow` | Skill | Quality | Day-3 |
 | `lead-research` (flow) | Flow | Sales | Day-5 |
 | `content-publish` (flow) | Flow | Marketing | Day-5 |
 | `build-website` (flow) | Flow | Web | Day-5 |
 | `api-q2-audit-checklist` | Script | Quality | Day-4 |
+| `iso-9001-lead-auditor-prep` | Skill | Quality | Day-3 |
 
 ## Filter by tag
 

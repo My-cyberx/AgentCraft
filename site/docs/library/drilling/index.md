@@ -7,8 +7,8 @@ O&G drilling artifacts — upstream, midstream, downstream.
 | Artifact | Type | Version | Last tested |
 |---|---|---|---|
 | [DEPRO Calculator](upstream/depro-calc.md) | Script | v3.2.1 | 2026-06-03 |
-| `cement-job-design` (coming Day-2) | Skill | — | — |
-| `liner-hanger-overview` (coming Day-2) | Flow | — | — |
+| [Cement Job Design](upstream/cement-job-design.md) | Skill | v1.0.0 | 2026-06-03 |
+| [Liner Hanger Overview](upstream/liner-hanger-overview.md) | Flow | v1.0.0 | 2026-06-03 |
 
 ## Midstream
 

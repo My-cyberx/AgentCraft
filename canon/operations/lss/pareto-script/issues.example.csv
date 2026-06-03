@@ -1,0 +1,26 @@
+Defect,Date,Location
+Weld porosity,2026-05-01,Block 4
+Weld porosity,2026-05-03,Block 4
+Weld porosity,2026-05-05,Block 4
+Weld porosity,2026-05-08,Block 4
+Valve leak,2026-05-02,Block 5
+Valve leak,2026-05-09,Block 5
+Valve leak,2026-05-12,Block 5
+Valve leak,2026-05-15,Block 5
+Valve leak,2026-05-18,Block 5
+Valve leak,2026-05-22,Block 5
+Surface corrosion,2026-05-04,Block 4
+Surface corrosion,2026-05-14,Block 4
+Pipe dent,2026-05-06,Block 5
+Pipe dent,2026-05-19,Block 5
+Misalignment,2026-05-11,Block 4
+Thread damage,2026-05-20,Block 4
+Coating failure,2026-05-21,Block 5
+Coating failure,2026-05-23,Block 5
+Improper torque,2026-05-25,Block 4
+Improper torque,2026-05-26,Block 4
+Inadequate support,2026-05-27,Block 5
+Operator error,2026-05-02,Block 4
+Operator error,2026-05-10,Block 5
+Material defect,2026-05-13,Block 5
+Material defect,2026-05-24,Block 4

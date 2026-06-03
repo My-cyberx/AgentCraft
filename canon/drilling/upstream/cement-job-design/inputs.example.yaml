@@ -1,0 +1,19 @@
+well_name: "Well B-7 (Block 5, ADNOC Onshore)"
+casing_od_in: 7.0
+casing_id_in: 6.366
+prev_casing_id_in: 9.625
+hole_td_ft: 12500
+open_hole_in: 8.75
+inclination_deg: 12.0
+mud_weight_ppg: 10.5
+fluid_loss_cc: 18
+top_of_cement_ft: 9500
+excess_pct: 15
+cement_class: "Class G (HSR)"
+cement_density_ppg: 15.8
+cement_yield_ft3_per_sk: 1.18
+water_gal_per_sk: 5.10
+accelerator_pct: 0
+retarder_pct: 0.5
+fluid_loss_pct: 0
+anti_gas_pct: 0.4

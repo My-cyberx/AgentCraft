@@ -1,0 +1,27 @@
+problem: "NPT on cementing operations exceeded target by 77% (14.2h vs 8h budget over 6 months)"
+categories:
+  - name: "Man (People)"
+    causes:
+      - "Crew experience varies across shifts (IWCF L4 only on day shift)"
+      - "Night-shift cementer callout delays average 90 min"
+  - name: "Machine (Equipment)"
+    causes:
+      - "Cement unit #3 pressure sensor drift (last cal 14 months ago)"
+      - "Recirculating mixer wear above manufacturer spec"
+      - "Standpipe pressure gauge unreliable below 500 psi"
+  - name: "Material"
+    causes:
+      - "Class G cement lot inconsistency (2 of 5 recent lots failed thickening time)"
+      - "Anti-gas additive settling in storage tanks (no agitation log)"
+  - name: "Method (Process)"
+    causes:
+      - "Pre-job checklist skipped on rushed operations (8 of 12 jobs)"
+      - "Pump schedule not adjusted for actual BHCT — uses plan number"
+  - name: "Measurement"
+    causes:
+      - "Pressure test results not logged in real time (end-of-job dump only)"
+      - "Lab thickening-time tests run at 100°F, field BHCT often 180°F+"
+  - name: "Environment"
+    causes:
+      - "Ambient temps >40°C affect additive performance and thickening time"
+      - "Well site layout forces 45m hose run, adds 8 min circulation time"

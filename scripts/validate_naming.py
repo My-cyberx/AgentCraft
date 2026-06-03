@@ -34,13 +34,17 @@ EXEMPT_FILES = {
     "mkdocs.yml", "smoke.yml", "weekly-smoke.yml", ".gitkeep", ".gitignore",
     "package.json", "requirements.txt", "Makefile",
     # Skill/SKILL.md and source files inside artifact folders are exempt
-    "SKILL.md", "SKILL.md.placeholder", "depro_calc.py", "audit_checklist.py",
+    "SKILL.md", "SKILL.md.placeholder",
+    "depro_calc.py", "audit_checklist.py",
+    "cement_job_design.py", "dmaic.py", "fishbone.py", "pareto.py",
     "inputs.example.yaml", "inputs.yaml", "inputs.json",
+    "problem.example.yaml", "issues.example.csv", "data.example.csv",
 }
 
 EXEMPT_DIRS = {
     "site/docs",          # MkDocs pages — they are the catalog, not artifacts
     "site/site",          # MkDocs build output — never version-controlled
+    ".wrangler",          # Cloudflare wrangler cache — local-only
     ".git",
     "__pycache__",
     "node_modules",

@@ -1,0 +1,20 @@
+project_name: "Reduce NPT on Well A-12 Cementing Operations"
+owner: "Aiham Alhawar, Operations Manager"
+problem_statement: "Non-productive time (NPT) on the A-12 cementing job was 14.2 hours over the last 6 months, exceeding the 8-hour project target by 77%. Each hour of NPT costs approximately $25,000 in deferred production and rig time."
+goal: "Reduce cementing-related NPT to ≤4 hours per well within 6 months (50% reduction)"
+sipoc_suppliers:
+  - "Cement service company"
+  - "Mud engineering"
+  - "Drilling crew"
+voc:
+  - "Operations manager: 'We lose time waiting on cement tests that come back inconsistent'"
+  - "Cementer: 'Lab results don't match field conditions, especially with high-temp wells'"
+  - "Drilling supervisor: 'Half the time we're holding because pressure tests fail first time'"
+team: "Aiham (lead), cementing engineer, mud engineer, drilling supervisor, lab tech"
+scope_in: "Cementing operations on Well A-12 and similar Block 5 wells (depth 10,000-13,000 ft)"
+scope_out: "Other wells in different blocks, drilling-only NPT, completions NPT"
+timeline: "12 weeks (Aug-Oct 2026)"
+key_metrics:
+  - "Cementing NPT hours per well (target ≤ 4)"
+  - "First-time pressure test pass rate (target ≥ 95%)"
+  - "Cement job quality (bond log, compressive strength) — no regression"

@@ -6,7 +6,7 @@ Health, Safety, and Environment artifacts — IWCF, IADC, well control.
 
 | Artifact | Type | Version | Last tested |
 |---|---|---|---|
-| `drill` (coming Day-2) | Skill | — | — |
+| [Drill](iwcf-l4/drill.md) | Skill | v1.0.0 | 2026-06-03 |
 
 ## IADC
 

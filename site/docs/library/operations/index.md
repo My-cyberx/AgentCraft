@@ -6,9 +6,9 @@ Operations artifacts — Lean Six Sigma, SME Audit System.
 
 | Artifact | Type | Version | Last tested |
 |---|---|---|---|
-| `dmaic-template` (coming Day-2) | Script | — | — |
-| `fishbone-skill` (coming Day-2) | Skill | — | — |
-| `pareto-script` (coming Day-2) | Script | — | — |
+| [DMAIC Template](lss/dmaic-template.md) | Script | v1.0.0 | 2026-06-03 |
+| [Fishbone](lss/fishbone.md) | Skill | v1.0.0 | 2026-06-03 |
+| [Pareto](lss/pareto.md) | Script | v1.0.0 | 2026-06-03 |
 
 ## SME Audit System
 
