@@ -40,6 +40,7 @@ EXEMPT_FILES = {
 
 EXEMPT_DIRS = {
     "site/docs",          # MkDocs pages — they are the catalog, not artifacts
+    "site/site",          # MkDocs build output — never version-controlled
     ".git",
     "__pycache__",
     "node_modules",
